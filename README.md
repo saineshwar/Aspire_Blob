@@ -1,51 +1,47 @@
+# ☁️ Integrating Azure Blob Storage with .NET Aspire
 
----
+This repository demonstrates how to integrate **Azure Blob Storage** with **.NET Aspire**, a modern framework by Microsoft for building scalable, cloud-native applications.
 
-### 🗂️ **Azure Blob Storage + .NET Aspire – `README.md`**
+## 🌟 What is .NET Aspire?
 
-```markdown
-# 🗄️ Integrating Azure Blob Storage with .NET Aspire
+[.NET Aspire](https://devblogs.microsoft.com/dotnet/introducing-dotnet-aspire/) is a cloud-native development stack tailored for .NET developers. It simplifies building distributed applications by integrating service discovery, telemetry, and cloud service bindings.
 
-This repository showcases how to integrate **Azure Blob Storage** with **.NET Aspire**, helping you build scalable, cloud-native applications using modern Microsoft technologies.
+## 📦 Why Azure Blob Storage?
 
-## 🌐 What is .NET Aspire?
+[Azure Blob Storage](https://azure.microsoft.com/en-us/products/storage/blobs) is a massively scalable object storage solution for unstructured data. It’s commonly used for:
+- Storing images, videos, documents, backups
+- Cloud-native file sharing
+- Data archiving
 
-[.NET Aspire](https://devblogs.microsoft.com/dotnet/introducing-dotnet-aspire/) is a .NET-based framework optimized for microservices and cloud-native systems. It simplifies service orchestration, observability, configuration, and deployment workflows.
+## 📘 Learn More
 
-## 💾 Why Azure Blob Storage?
+Follow the full integration tutorial here:  
+🔗 [How to Integrate .NET Aspire with Azure Blob Storage](https://tutexchange.com/how-to-integrate-net-aspire-with-azure-blob-storage/)
 
-Azure Blob Storage is designed for massive-scale object storage and is ideal for storing unstructured data such as images, documents, and logs. It's widely used in cloud-native apps for its durability and easy integration.
+In the tutorial, you'll learn:
+- How to use Azurite to emulate Blob Storage locally
+- Configure Blob storage service inside Aspire
+- Register Azure Blob clients with the Aspire builder
+- Implement APIs to upload and retrieve blobs
 
-## 📘 Step-by-Step Guide
+## 🧰 Tech Stack
 
-Full tutorial here:
-
-👉 [How to Integrate .NET Aspire with Azure Blob Storage](https://tutexchange.com/how-to-integrate-net-aspire-with-azure-blob-storage/)
-
-You’ll learn how to:
-- Use Azurite to emulate Blob Storage locally
-- Register Blob service clients in the Aspire builder
-- Upload and download blobs via APIs
-- Securely configure connection strings
-
-## 🔧 Tech Stack
-
-- [.NET Aspire](https://github.com/dotnet/aspire)
+- .NET Aspire
 - ASP.NET Core
 - Azure.Storage.Blobs SDK
-- Docker (for Azurite)
+- Docker (for Azurite Blob Emulator)
 
-## ▶️ Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
-- [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download)
+- [.NET 8 SDK](https://dotnet.microsoft.com/download)
 - [Docker](https://www.docker.com/)
-- [Azure.Storage.Blobs](https://www.nuget.org/packages/Azure.Storage.Blobs/)
+- [Azurite Emulator](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azurite)
 
 ### Run the Project
 
 ```bash
 git clone https://github.com/saineshwar/Aspire_Blob.git
-cd aspire-azure-blob
+cd aspire-azure-blob-storage
 dotnet run --project AspireApp
